@@ -2,6 +2,11 @@
 Use iptables to firewall off a single port on the host
 
 ## Use
+Create a Rancher service with
+- `Always run one instance on every host`
+- add the capability `NET_ADMIN`
+- Networking-\>Network `Host`
+- Environment `ALLOWED_ADDRESSES=1.2.3.4,2.3.4.5`
 
 ## Parameters
 Parameters are given as environment variable. The following parameters are available
